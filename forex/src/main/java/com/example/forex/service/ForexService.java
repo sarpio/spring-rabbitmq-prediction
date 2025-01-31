@@ -27,7 +27,7 @@ public class ForexService {
     @Value("${forex.to-currency}")
     private String toCurrency;
 
-    @Value("forex.api-key")
+    @Value("${forex.api-key}")
     private String apiKey;
 
     private final WebClient webClient;
