@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Aggregator-Service
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: rabbit
+      password: rabbit
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/prediction
+rabbitmq:
+  exchange: prediction-exchange
+  weather-queue: weather-queue
+  forex-queue: forex-queue
+  weather-routing-key: weather-routing-key
+  forex-routing-key: forex-routing-key
+history:
+  size: 10
