@@ -5,6 +5,7 @@ This project demonstrates communication between microservices using RabbitMQ.
 ## Technologies Used
 1. Java 17
 2. Spring Boot version 3.4.2
+3. Angular 19 standalone components
 
 ## Deployment Process
 Run Docker Compose to establish Docker containers for RabbitMQ and the PostgreSQL database.
