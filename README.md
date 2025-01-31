@@ -18,7 +18,6 @@ You can deploy the applications in Docker containers or run them directly using 
 ## Architecture
 1. The Weather Service retrieves weather data every hour using WebClient.
 2. The Forex Service fetches exchange rates from EUR to PLN.
-3. The Prediction Service collects data from both services, performs predictions for the next measurement, and stores the results in the database. Each database record contains both the actual measurement and the forecast.
-  a. This service also includes a UI built with Angular 19 using standalone components to display values and forecast variations in a table.
-5. Microservices communicate via RabbitMQ.
-6. If the data reception frequency increases and duplicates appear, both microservices check for duplicates and prevent redundant data from being published.
+3. The Prediction Service collects data from both services, performs predictions for the next measurement, and stores the results in the database. Each database record contains both the actual measurement and the forecast. This service also includes a UI built with Angular 19 using standalone components to display values and forecast variations in a table.
+4. Microservices communicate via RabbitMQ.
+5. If the data reception frequency increases and duplicates appear, both microservices check for duplicates and prevent redundant data from being published.
